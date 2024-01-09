@@ -1,0 +1,35 @@
+package string;
+
+public class Vowels {
+	
+	public static void findVowels(String str) {
+		
+		int countVowels=0;
+		
+		int consonat=0;
+		
+		
+		for(int i=0;i<str.length();i++) {
+			
+			
+			if(str.charAt(i)=='a'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u'||str.charAt(i)=='e'||
+					str.charAt(i)=='A'||str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U'||str.charAt(i)=='E')
+			
+			{
+				countVowels++;
+			}
+			else  {
+				consonat++;
+			}
+			
+		}
+		System.out.println(countVowels);
+		System.out.println(consonat);
+	}
+
+	public static void main(String[] args) {
+	String str="Varsha";
+     Vowels.findVowels(str);
+	}
+
+}
